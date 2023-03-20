@@ -1,0 +1,14 @@
+:root {
+  /* colours */
+  --secodary-background-color: #dde9eb;
+  /* colour scale for boxes */
+  /* #7098b2 */
+  /* #406e8c */
+  --primary-color: #215170;
+  /* #103953 */
+
+  --primary-background-color: #ffffff;
+  --alternative-background-color: #e8e9e9;
+  --highlight-color: #303030;
+  --text-color: #303030;
+}
