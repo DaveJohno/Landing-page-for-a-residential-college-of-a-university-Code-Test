@@ -4,22 +4,100 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="style.css" />
     <title>Residential College</title>
 
-    <script src="./main.js" defer></script>
+    <script type="module" src="./data/data.js"  defer></script>
+    <script type="module"src="./main.js" defer></script>
   </head>
   <body>
     <header></header>
-    <section class="sub-header"></section>
-    <main>
-      <section class="first"></section>
-      <section class="second"></section>
+   
+
+    <section class="sub-header rotator">
+      <div class="slideshow-container"></div>
+    </section>
+
+    <main class="page-content">
+
+      <!-- First section - 3 cards represented in a column layout, cards should feature a thumbnail, title and summary -->
+      <section class="first-section"> 
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>John Doe</b></h4> 
+            <p>Architect & Engineer</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus cumque magnam quia quam optio fugit eum nesciunt dicta eaque suscipit rerum odit aliquam quas ratione hic eligendi, maiores nam sint?</p> 
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>John Doe</b></h4> 
+          <p>Architect & Engineer</p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus iure tenetur veritatis distinctio alias, quos iusto assumenda molestiae odit fuga beatae fugiat tempore ea, repellendus ab incidunt vel labore architecto!</p>
+      </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80s" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>John Doe</b></h4> 
+          <p>Architect & Engineer</p> 
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi placeat debitis cumque amet dolor quaerat cum, harum nostrum officiis eveniet, sequi laborum qui? Laboriosam aliquid fuga hic sit vero necessitatibus.</p>
+        </div>
+      </div>
+    </section>
+
+      <!-- Second section - image left text right, text section should have a title, some dummy text and a cta button. -->
+      <section class="second">
+        <h1>Main Heading</h1>
+        <h2>Subheading 1</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel reprehenderit omnis dolore nemo dignissimos veritatis ipsa unde aut, natus, est magnam dolorem id voluptas possimus labore at dolor, iure blanditiis?
+
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corporis vel maxime maiores libero ab nulla in voluptatum quos aut, sint nihil aliquam quam animi voluptatem accusamus consequuntur? Itaque, vero.
+          </p>
+        <h2>Subheading 2</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel distinctio dolore similique voluptatibus voluptate, quibusdam, sapiente tenetur aperiam est reprehenderit, quidem animi. Numquam, ad similique. Non voluptatum perspiciatis voluptas saepe.
+
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolores error praesentium reprehenderit exercitationem. Vel eos veritatis voluptas autem amet quod error perspiciatis, hic, asperiores, porro placeat eligendi totam? Doloribus!
+          </p>
+
+      </section>
+
+      <!-- Third section - Thumbnail gallery, 4 x 2 images, would like to see some form of hover effect on the images -->
       <section class="third"></section>
-      <section class="fourth"></section>
+
+      <!-- Fourth section - Content block with subheadings and more content. -->
+      <article class="fourth-section">
+    <h1>Chip Kidd</h1>
+    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, atque?</p>
+
+    <div class="article-body flow">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae modi ab recusandae aliquid perspiciatis
+        unde dolorum id natus velit vel, facere excepturi similique nemo enim quasi nam, expedita inventore? Repellat
+        aspernatur ducimus facilis nemo omnis sunt unde, vel doloribus error enim id deleniti saepe placeat.</p>
+      <p>Voluptatem <a href="#">ipsum tempora vel quisquam</a> cumque natus nesciunt vitae ipsam in inventore, earum eligendi impedit.
+        <a href="https://google.com">Sunt quis veniam</a> numquam vitae, magnam, debitis reiciendis in voluptas porro voluptatum, est consequuntur
+        illo! Assumenda saepe aliquid eos fugiat rerum similique sequi illo velit amet officia voluptas, sed ducimus.
+      </p>
+      <p>Quasi necessitatibus mollitia quisquam officiis molestiae fugiat officia cumque tempora accusamus adipisci
+        quia, suscipit earum rerum illo, fugit architecto fuga eius error labore! Ducimus voluptate quae aliquid
+        obcaecati beatae exercitationem quaerat molestiae quos, atque dolorum id quo sint vero sit reiciendis cumque
+        consectetur molestias temporibus.</p>
+      <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis.</blockquote>
+      <p>Molestiae magnam similique dolorum vero libero doloribus neque, voluptas natus sunt facere ipsa cupiditate
+        placeat necessitatibus cum perferendis ducimus deserunt architecto nesciunt, illum ab aliquid minus
+        dignissimos dolore voluptatibus? Perferendis, incidunt! Repellendus numquam nobis quidem totam dolor aliquid.
+        Placeat rerum eveniet doloribus asperiores quis iusto!</p>
+    </div>
+
+  </article>
     </main>
+
+    <!-- Footer - 3 cols with links to the site navigation, last col should have a logo of some sort 
+      Tag line which is centered at the bottom under the cols "Built with Acora" -->
     <footer>
-      <h4 class="footer-tagline">Built with Acora</h4>
+      <h5 class="footer-tagline">Built with Acora</h4>
     </footer>
   </body>
 </html>
