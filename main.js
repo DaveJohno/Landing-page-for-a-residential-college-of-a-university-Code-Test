@@ -1,7 +1,3 @@
-// header
-const nav = document.querySelector(".nav-bar");
-const navBarItems = document.querySelectorAll(".nav-bar-item");
-
 //get the window viewport width
 const render = () => {
   let windowInnerWidth = window.innerWidth;
@@ -9,19 +5,22 @@ const render = () => {
   if (windowInnerWidth <= 768) {
     renderHeaderMobile();
     renderSlider();
+    renderAccommodation();
   } else if (windowInnerWidth > 768 && windowInnerWidth <= 960) {
     renderHeaderDesktop();
     renderSlider();
+    renderAccommodation();
   } else if (windowInnerWidth > 960) {
     renderHeaderDesktop();
     renderSlider();
+    renderAccommodation();
   }
 };
 
 window.addEventListener("resize", () => render());
 
 // nav bar items
-import { navItems, sliderImages } from "./data/data.js";
+import { navItems, sliderImages, accommodation } from "./data/data.js";
 
 // render mobile
 const renderHeaderMobile = () => {
@@ -209,6 +208,28 @@ const renderSlider = () => {
       plusSlides(1);
     }, 3000);
   };
+};
+
+const renderAccommodation = () => {
+  const accommodationSection = document.querySelector(".second-section");
+  accommodationSection.innerHTML = ` <h1>Accommodation</h1> 
+  <div class="acc-card-container"></div>`;
+  const roomsContainer = document.querySelector(".acc-card-container");
+
+  roomsContainer.innerHTML = accommodation
+    .map(
+      (room) => `
+    <img src="${room.imageURL}" alt="${room.imageAlt}">
+    <div class="information-container">
+      <h3>${room.type.toUpperCase()} ACCOMMODATION</h3>
+      <p>${room.beds}</p>
+      <p>${room.bathroom} bathroom</p>
+      <p>$${room.price.toFixed(2)}</p>
+      <p>${room.info}</p>
+      <button>Check Availability</button>
+    </div>`
+    )
+    .join("");
 };
 
 // renderHeader();

@@ -122,3 +122,26 @@ export const sliderImages = [
     alt: "a multi - colored building with a blue sky in the background",
   },
 ];
+
+export const accommodation = [
+  {
+    imageURL:
+      "https://images.unsplash.com/photo-1508253578933-20b529302151?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2861&q=80",
+    imageAlt: "bedroom interior for two persons",
+    beds: "twin share",
+    bathroom: "communal",
+    price: 120,
+    type: "delux",
+    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corporis vel maxime maiores libero ab nulla in voluptatum quos aut, sint nihil aliquam quam animi voluptatem accusamus consequuntur? Itaque, vero.",
+  },
+  {
+    imageURL:
+      "https://images.unsplash.com/photo-1564273795917-fe399b763988?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80",
+    imageAlt: "well-lit room",
+    beds: "single",
+    bathroom: "shered",
+    price: 180,
+    type: "basic",
+    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corporis vel maxime maiores libero ab nulla in voluptatum quos aut, sint nihil aliquam quam animi voluptatem accusamus consequuntur? Itaque, vero.",
+  },
+];
